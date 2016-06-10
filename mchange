@@ -1,0 +1,29 @@
+#!/bin/bash
+# Date : v.2 - Quinta Feira, 12:55, Out 2015 | coded by m4dd0x;
+echo " 
+            ,----------,  
+     _,    ( FUCK NSA! |  
+    (/} _.------------'    
+    'u\    
+    -P-»                   
+     U                    
+     Nn                               
+------------------------"
+echo ""
+echo "mac_random v2.0 | Exclusive for Fuduntu | coded by m4dd0x"
+errcho () {
+  >&1 echo "$@"
+}
+echo "Bom dia Mestre, qual é o interface? (eth0, wlan0)" 
+read var
+if [[ "$var" < "z" ]]; then
+maybe_sudo="$([ -w "$ifconfig $var down" ] || echo 'sudo')"
+$maybe_sudo ifconfig $var down
+$maybe_sudo macchanger -r $var					
+$maybe_sudo ifconfig $var up
+	echo "Feito Mestre!"
+	exit 0
+else 
+	errcho "Falhou a alteração do endereço fisico"
+	exit 1
+fi	
