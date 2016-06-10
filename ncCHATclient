@@ -7,7 +7,7 @@ echo "    /^^^\  .        |C||H||A||T| |C||L||I||E||N||T|  ";
 echo "   /     \  )       +-++-++-++-+ +-++-++-++-++-++-+  ";
 echo "  (  )-(  )/             P0w3rD by n3tC4t GNU";
 echo " -----------   ";
-echo "irssi@hotmail.com | Setembro 2015 | coded by m4dd0x & rub3n S1lv4"
+echo "irssi@hotmail.com | Setembro 2015 | coded by MrX & MrY"
 echo " ";
 echo "Introduz o ip do server: " 
 read input_variable
