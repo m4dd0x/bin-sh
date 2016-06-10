@@ -1,0 +1,16 @@
+#!/bin/bash
+# Date : v.2 - Quarta Feira, 02:51, 30 Setembro 2015 | coded by m4dd0x;
+echo "    ( _ )  	";
+echo "   } 6 6 {        ";
+echo "  ==. Y ,==         +-++-++-++-+ +-++-++-++-++-++-+  ";
+echo "    /^^^\  .        |C||H||A||T| |C||L||I||E||N||T|  ";
+echo "   /     \  )       +-++-++-++-+ +-++-++-++-++-++-+  ";
+echo "  (  )-(  )/             P0w3rD by n3tC4t GNU";
+echo " -----------   ";
+echo "irssi@hotmail.com | Setembro 2015 | coded by m4dd0x & rub3n S1lv4"
+echo " ";
+echo "Introduz o ip do server: " 
+read input_variable
+while true; do read -n30 ui; echo $ui |openssl enc -aes-256-ctr -a -k PA3leFl0d3.t3 ; done | nc $input_variable 8877 | while read so; do decoded_so=`echo "$so "| openssl enc -d -a -aes-256-ctr -k PA3leFl0d3.t3`; echo -e "\007" && echo -e "Recebido: $decoded_so "; done 
+
+
